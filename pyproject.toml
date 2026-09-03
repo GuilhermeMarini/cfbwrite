@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cfbwrite"
+version = "1.0.0"
+description = "Write a complete MS-CFB v3 compound file from Python, including streams that changed size — verified and atomic"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "AGPL-3.0-or-later"
+license-files = ["LICENSE"]
+authors = [{ name = "Guilherme Marini" }]
+keywords = ["cfb", "compound file", "ole", "olefile", "msi", "doc", "xls"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: System :: Filesystems",
+]
+dependencies = ["olefile>=0.47"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6", "mypy>=1.11"]
+
+[project.urls]
+Homepage = "https://github.com/GuilhermeMarini/cfbwrite"
+Source = "https://github.com/GuilhermeMarini/cfbwrite"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

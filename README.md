@@ -33,3 +33,20 @@ Extracted from [PAC CT](https://github.com/GuilhermeMarini/pac-ct).
 ## Licence
 
 AGPL-3.0-or-later — see [LICENSE](LICENSE).
+
+## Install
+
+```bash
+pip install cfbwrite
+```
+
+Requires Python 3.10+ and `olefile`.
+
+## Why it exists
+
+It was `pacct/parsers/ole_rebuild.py` inside
+[PAC CT](https://github.com/GuilhermeMarini/pac-ct), a commissioning toolkit
+for protective relays. Those relays keep their settings in `.rdb` files, which
+are Compound Files, and editing a DNP3 point map there routinely grows a
+stream. Nothing in the module knows any of that — it is the container format
+and nothing else — so it lives here instead.
