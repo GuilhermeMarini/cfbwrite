@@ -28,8 +28,6 @@ protection-relay settings files:
 
 Extracted from [PAC CT](https://github.com/GuilhermeMarini/pac-ct).
 
-> **Status: scaffold.** Code lands here per `docs/MIGRATION.md` §4.1 of PAC CT.
-
 ## Licence
 
 AGPL-3.0-or-later — see [LICENSE](LICENSE).
