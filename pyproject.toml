@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cfbwrite"
-version = "1.0.0"
+version = "1.0.1"
 description = "Write a complete MS-CFB v3 compound file from Python, including streams that changed size — verified and atomic"
 readme = "README.md"
 requires-python = ">=3.10"
