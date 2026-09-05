@@ -40,7 +40,7 @@ jobs:
         # pyproject.toml and `__version__` in `src/cfbwrite/__init__.py` --
         # and the drift between them is silent and has a direction: a release
         # bumps pyproject, the wheel goes to PyPI, and the installed package
-        # still answers the old number when asked. `selfiles` pins
+        # still answers the old number when asked. `sellib` pins
         # `cfbwrite>=X`, so that is a consumer holding a distribution whose
         # own code denies the version the index served.
         #
